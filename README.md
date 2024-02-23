@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+# Blackjack Game - React TypeScript Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+Welcome to the Blackjack game project! This project is a simplified version of the classic casino card game, where you'll face off against the computer, also known as "The House". The goal is to beat the House's hand without going over 21 points.
 
-## Available Scripts
+In this README, you'll find information on how to set up the project, play the game, understand the rules, and additional notes for developers.
 
-In the project directory, you can run:
+## Project Overview
+This project is built using React and TypeScript. It utilizes the Deck of Cards API for card management, allowing players to initialize a deck and deal cards during the game.
 
-### `npm start`
+## Game Rules
+Here are the simplified rules for the Blackjack game:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **Players**: You vs The House (computer).
+2. **Card Values**:
+   - Numbered cards: Face value (2-10).
+   - Face cards (Jack, Queen, King): 10 points each.
+   - Ace: Worth 1 or 11 points, whichever is more beneficial for the player.
+3. **Initial Dealing**:
+   - The House is dealt two face-up cards.
+   - You are dealt two face-up cards and have the option to "Hit" (draw another card) or "Stand" (end the round).
+4. **Winning Conditions**:
+   - Your total is < 21 and higher than the House's total.
+   - Your total is exactly 21 and the House's total is not 21.
+5. **Losing Conditions**:
+   - Your total exceeds 21.
+   - Your total is lower than the House's total.
+   - You tie with the House.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Setup
+To set up and run the project locally, follow these steps:
 
-### `npm test`
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install` or `yarn install`.
+4. Start the development server using `npm start` or `yarn start`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
+- React
+- TypeScript
+- Deck of Cards API
 
-### `npm run build`
+## File Organization
+The project is organized into components, types, constants and api functions for better code structure and maintainability.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+/src
+|-- components
+| |-- Card.tsx
+| |-- Game.tsx
+|-- constants
+| |-- game.ts
+|-- types
+| |-- game.ts
+|-- api
+| |-- deck.ts
+|-- constants
+| |-- game.ts
+|-- App.tsx
+|-- index.tsx
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Usage
+This project interacts with the Deck of Cards API for card management. It initializes one deck and deals out cards during the game.
 
-### `npm run eject`
+## Additional Notes
+- The game logic is implemented in the `Game.tsx` component.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Conclusion
+Thank you for considering this project! If you have any questions or feedback, feel free to reach out.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Enjoy playing Blackjack! 🃏🎉
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
