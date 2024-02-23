@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Card, Deck } from "../types/deck";
+import { Card, Deck } from "../types/game";
 
 const BASE_DECK_API_URL = "https://deckofcardsapi.com/api";
 
