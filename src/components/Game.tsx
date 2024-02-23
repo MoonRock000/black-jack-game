@@ -99,6 +99,10 @@ function Game() {
     }
   }, [gameOver, gameStatus, playerPoints, houseCards]);
 
+  if (!deck || houseCards.length === 0 || playerCards.length === 0) {
+    return (<div>Loading Data ...</div>)
+  }
+
   return (
     <div>
       <div className='heading'> House Cards </div>
