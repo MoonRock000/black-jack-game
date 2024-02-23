@@ -111,7 +111,7 @@ function Game() {
       <div className='heading'> Player Cards </div>
       <div className='cards-container'>
         {
-          playerCards.map((card) => <DeckCard card={card} key={card.code} showCard={true}/>)
+          playerCards.map((card) => <DeckCard card={card} key={card.code} showCard={true} />)
         }
       </div>
       <div> Player points: {playerPoints}</div>
