@@ -5,3 +5,4 @@ export const GAME_MESSAGES: {[key in GameStatus]: string} = {
   lose: "Oops! You have lost",
   tie: "Ooh! It was a tie. You have lost" 
 }
+export const BASE_DECK_API_URL = "https://deckofcardsapi.com/api";
